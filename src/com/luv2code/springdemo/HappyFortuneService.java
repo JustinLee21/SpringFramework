@@ -4,7 +4,8 @@ public class HappyFortuneService implements FortuneService {
 
 	@Override
 	public String getFortune() {
-		return "Today is your lucky day!";
+		String [] arr = {"Today is your lucky day!", "Today could be better", "You will get it next time!"}; 
+		return arr[(int) (arr.length-(Math.random()*arr.length))]; 
 	}
 
 }
